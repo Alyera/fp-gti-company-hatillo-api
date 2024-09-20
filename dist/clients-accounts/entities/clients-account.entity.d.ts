@@ -1,0 +1,37 @@
+import { Client } from 'src/clients/entities/client.entity';
+export declare class ClientsAccount {
+    CUSTNMBR: string;
+    ADRSCODE: string;
+    SLPRSNID: string;
+    UPSZONE: string;
+    SHIPMTHD: string;
+    TAXSCHID: string;
+    CNTCPRSN: string;
+    ADDRESS1: string;
+    ADDRESS2: string;
+    ADDRESS3: string;
+    COUNTRY: string;
+    CITY: string;
+    STATE: string;
+    ZIP: string;
+    PHONE1: string;
+    PHONE2: string;
+    PHONE3: string;
+    FAX: string;
+    MODIFDT: Date;
+    CREATDDT: Date;
+    GPSFOINTEGRATIONID: string;
+    INTEGRATIONSOURCE: number;
+    INTEGRATIONID: string;
+    CCode: string;
+    DECLID: string;
+    LOCNCODE: string;
+    SALSTERR: string;
+    USERDEF1: string;
+    USERDEF2: string;
+    ShipToName: string;
+    Print_Phone_NumberGB: number;
+    DEX_ROW_TS: Date;
+    DEX_ROW_ID: number;
+    client: Client | null;
+}

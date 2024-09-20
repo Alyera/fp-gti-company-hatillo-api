@@ -1,0 +1,46 @@
+import { ClientsAccountsService } from './clients-accounts.service';
+import { CreateClientsAccountInput } from './dto/create-clients-account.input';
+import { UpdateClientsAccountInput } from './dto/update-clients-account.input';
+export declare class ClientsAccountsResolver {
+    private readonly clientsAccountsService;
+    constructor(clientsAccountsService: ClientsAccountsService);
+    createClientsAccount(createClientsAccountInput: CreateClientsAccountInput): string;
+    findAll(): import(".prisma/client").Prisma.PrismaPromise<{
+        CUSTNMBR: string;
+        ADRSCODE: string;
+        SLPRSNID: string;
+        UPSZONE: string;
+        SHIPMTHD: string;
+        TAXSCHID: string;
+        CNTCPRSN: string;
+        ADDRESS1: string;
+        ADDRESS2: string;
+        ADDRESS3: string;
+        COUNTRY: string;
+        CITY: string;
+        STATE: string;
+        ZIP: string;
+        PHONE1: string;
+        PHONE2: string;
+        PHONE3: string;
+        FAX: string;
+        MODIFDT: Date;
+        CREATDDT: Date;
+        GPSFOINTEGRATIONID: string;
+        INTEGRATIONSOURCE: number;
+        INTEGRATIONID: string;
+        CCode: string;
+        DECLID: string;
+        LOCNCODE: string;
+        SALSTERR: string;
+        USERDEF1: string;
+        USERDEF2: string;
+        ShipToName: string;
+        Print_Phone_NumberGB: number;
+        DEX_ROW_TS: Date;
+        DEX_ROW_ID: number;
+    }[]>;
+    findOne(id: number): string;
+    updateClientsAccount(updateClientsAccountInput: UpdateClientsAccountInput): string;
+    removeClientsAccount(id: number): string;
+}

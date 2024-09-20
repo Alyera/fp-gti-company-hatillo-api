@@ -1,0 +1,30 @@
+import { Invoice } from 'src/invoices/entities/invoice.entity';
+import { Proforma } from 'src/proformas/entities/proforma.entity';
+export declare class SalesTaxesWorkHistory {
+    SOPTYPE: number;
+    SOPNUMBE: string;
+    LNITMSEQ: number;
+    TAXDTLID: string;
+    ACTINDX: number;
+    BKOUTTAX: number;
+    TXABLETX: number;
+    STAXAMNT: number;
+    ORSLSTAX: number;
+    FRTTXAMT: number;
+    ORFRTTAX: number;
+    MSCTXAMT: number;
+    ORMSCTAX: number;
+    TAXDTSLS: number;
+    ORTOTSLS: number;
+    TDTTXSLS: number;
+    ORTXSLS: number;
+    TXDTOTTX: number;
+    OTTAXPON: number;
+    DELETE1: number;
+    CURRNIDX: number;
+    TRXSORCE: string;
+    TXDTLPCTAMT: number;
+    DEX_ROW_ID: number;
+    proforma?: Proforma;
+    invoice?: Invoice;
+}
